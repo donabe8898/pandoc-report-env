@@ -21,7 +21,7 @@ documentclass: ltjsarticle
 title: 題名
 author:
     id:   YJSNPI114514
-    name:   岡本 悠吾
+    name:   山本　太郎
     email:  oketsumarudashi@mail.jp
 lecture:
     deadline: 1970年10月10日
