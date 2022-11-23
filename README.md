@@ -1,12 +1,22 @@
 # pandoc-report-env
-あたいの大学用レポート環境だお（ ＾ω＾）
+ワテの大学用レポート環境だお（ ＾ω＾）
 
 ## pandocのインストール
 ArchLinuxを使ってるのでyayとか使いますが,お好きなディストロに読み替えてもらってokです。
 
-- AURからpandocのバイナリとcrossrefのバイナリをインストール
-- バイナリだとHaskellの依存関係をｲﾝｽｺしなくて済むので気が楽
+- pandocとpandoc-crossrefをインストール
+- TeXもインストールしておく（最低限の日本語環境がOKだと思う）
+- バイナリだとHaskellの依存関係をｲﾝｽｺしなくて済むので、可能ならばそっちのほうが良いかも。
+
 ```
+# Debuan GNU/Linux | Ubuntu
+sudo apt install pandoc cabal-install
+sudo cabal install --global pandoc-crossref
+
+# Fedora | Alma Linux etc...
+sudo dnf install pandoc
+
+# ArchLinux | Manjaro Linux etc...
 yay -S pandoc-bin
 yay -S pandoc-crossref-bin
 
@@ -14,14 +24,14 @@ yay -S pandoc-crossref-bin
 
 ## 書く
 - もりもり書いていこう
-- mdの頭にこれ付けるといいよ
+- 表紙は以下のようにして書く
 ```
 ---
 documentclass: ltjsarticle
 title: 題名
 author:
-    id:   YJSNPI114514
-    name:   山本　太郎
+    id:   A00020001     # 学籍番号
+    name:   名前　無胃
     email:  oketsumarudashi@mail.jp
 lecture:
     deadline: 1970年10月10日
